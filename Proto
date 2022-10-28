@@ -1,0 +1,48 @@
+# Youtrack - Beginner Guideline
+## Table of contents
+- [Table of contents](#table-of-contents)
+- [Project](#1-project)
+    - [Create a Project](#11-create-a-project)
+    - [Team](#12-team)
+    - [Roles](#13-roles)
+    - [Time Tracking](#14-time-tracking)
+    - [Check](#15-check)
+- [Agile Board](#2-agile-board)
+    - [Overview](#21-overview)
+    - [Sprints](#22-sprints)
+    - [New Swimlane](#23-new-swimlane)
+    - [Cards](#24-cards)
+    - [Board Time Tracking](#25-board-time-tracking)
+    - [Board Settings](#26-board-settings)
+- [Report and Dashboard](#3-report-and-dashboard)
+    - [Create a Report](#31-create-a-report)
+    - [Dashboard Overview](#32-dashboard-overview)
+- [Supporting Information](#4-supporting-information)
+    - [GitHub Integration](#41-github-integration)
+    - [Enable Registration on your YouTrack Server](#42-enable-registration-on-your-youtrack-server)
+## 1. Project
+### 1.1 Create a Project
+To create a project you go to projects -> create project.
+![alt text](https://i.imgur.com/Mew2ZuL.png "Creating a Project")
+Now you can name your project, give it an ID, choose the project type and give it a description.
+### 1.2 Team
+The first important thing to do is to invite people that you want to work with in your project. So to do this you have to go to the project settings. You can find it if you click on your project in the projects tab.
+![alt text](https://i.imgur.com/qakeBNC.png "Project Settings")
+Now you see the project settings on the right
+![alt text](https://i.imgur.com/vlou2oo.png "Project Settings")
+Now you click on "Team" and can add new team members over the "Add members" button. You can only add users which are registered to the youtrack server. If you add an user he gets the role developer.
+### 1.3 Roles
+Every project has different roles. As mentioned above added members get the developer role automatically. If you want to change roles you go again to the project settings and and click on "Access". Here you see your team members and their roles. Over grant role you can give different users or groups a role in your project.
+![alt text](https://i.imgur.com/1Lh8BIL.png "Access sttings")
+If you want to know more about the roles you can go to the administration settings of the youtrack server. Here you go to Access Management -> Roles.
+![alt text](https://i.imgur.com/GRIeQTt.png "Server administration settings")
+![alt text](https://i.imgur.com/3NBp5Ai.png "Roles")
+Here you see a list of all the roles on the youtrack server and their permissions. If you are the owner of the server you can also add roles to the server.
+### 1.4 Time Tracking
+So before you can go to the agile board(s) of your project I would recommend that you enable time tracking. It allows you to automatically track the time if a card/task is in progress. So to enable time tracking you go again to the project settings and choose time tracking. Now you set the settings like the following picture:
+![alt text](https://i.imgur.com/YekUMSh.png "Time Tracking Settings")
+After that you go to workflow (also in the project settings) and click on "Attach workflows". Then you search for the "In Progress Work Timer".
+![alt text](https://i.imgur.com/AfvIKTT.png "Workflows - In Progress Work Timer")
+If you have never set up this work flow before you will get a "requires setup" notification next to the "In Progress Work Timer". Now click on the "+" right next to the workflow and go to the rules which have this notification. Simply click "configure project" and it will configure it automatically.
+If you have never set up this work flow before you will get a "requires setup" notification next to the "In Progress Work Timer". On the right half you see a detailed view with 2 Rules. Simply click on Apply fixes to use time tracking.
+![alt text](https://i.imgur.com/8TCdKiv.png) "Workflow setup")
